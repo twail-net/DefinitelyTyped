@@ -601,7 +601,7 @@ declare namespace Parse {
         equalTo(key: string, value: any): Query;
         exists(key: string): Query;
         find<T extends Object>(options?: Query.FindOptions): Promise<T[]>;
-        first<T>(options?: Query.FirstOptions): Promise<T>;
+        first<T>(options?: Query.FirstOptions): Promise<T | null>;
         get(objectId: string, options?: Query.GetOptions): Promise<any>;
         greaterThan(key: string, value: any): Query;
         greaterThanOrEqualTo(key: string, value: any): Query;
